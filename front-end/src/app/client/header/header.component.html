@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Navbar</a>
+  <div class="">
+    <a class="navbar-brand" routerLink="/login" *ngIf="!loggedIn">Login</a>
+    <a class="navbar-brand" (click)="logout($event)" href="#" *ngIf="loggedIn">Logout</a>
+    <a class="navbar-brand" routerLink="/profile" *ngIf="loggedIn">profile</a>
+  </div>
+</nav>
